@@ -39,15 +39,6 @@ DataService
 ---
 
 ## Usage
-- Prerequisite: Initialize the service and define the default data template in Configuration.lua
-```lua
---DataService.lua
-DataService:Init()
-```
-```lua
---Configuration.lua
--- Well, just configure the settings like DEFAULT_TEMPLATE etc. according to your use case. Or leave as-is if experimenting.
-```
 
 - Give a player coins
 ```lua
@@ -76,6 +67,16 @@ end)
 2. Call DataService:Init() from your main server script
 3. Define your data structure in Configuration
 
+For example:
+- Initialize the service and define the default data template in Configuration.lua
+```lua
+--DataService.lua
+DataService:Init()
+```
+```lua
+--Configuration.lua
+-- Well, just configure the settings like DEFAULT_TEMPLATE etc. according to your use case. Or leave as-is if experimenting.
+```
 ---
 
 ## Design Decisions
