@@ -1,0 +1,3 @@
+Downloading the system directly to your game won't work. 
+Because Github doesn't support script heirarchy like in roblox explorer.
+So consider copying the heirarchy like in README.txt to get the system to work.
