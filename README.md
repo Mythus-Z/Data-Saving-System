@@ -86,11 +86,11 @@ Short paragraph for each key decision. e.g.:
 - Used RequestQueue → to prevent DataStore rate limit issues (pros: stable multiple operations, cons: slight delay, usually goes unnoticed)
 - Using UpdateAsync instead of SetAsync under the hood → to avoid overwriting data (Tradeoff: UpdateAsync is slightly more complex. But it's not a performance issue in my system because I used in-memory profile system for faster real time data access)
 
-Creating DataTemplate → to ensure safe data reconciliation and deep copying of default template
+- Creating DataTemplate → to ensure safe data reconciliation and deep copying of default template
 
-Adding AutoSaveManager → to reduce data loss risk
+- Adding AutoSaveManager → to reduce data loss risk
 
-Structuring with a DataService layer → to centralize logic
+- Structuring with a DataService layer → to centralize logic
 ---
 
 ## Known Limitations
