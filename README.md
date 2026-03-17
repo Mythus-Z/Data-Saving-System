@@ -75,7 +75,8 @@ DataService:Init()
 ```
 ```lua
 --Configuration.lua
--- Well, just configure the settings like DEFAULT_TEMPLATE etc. according to your use case. Or leave as-is if experimenting.
+-- just configure the settings like DEFAULT_TEMPLATE etc. according to your use case. Or leave as-is if experimenting.
+-- You can experiment with other settings too, just be careful and ensure you understand the option first.
 ```
 ---
 
