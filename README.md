@@ -1,10 +1,8 @@
 # Roblox DataStore System
 
-Short 2-3 sentence description of what the system is and what problem it solves.
-(e.g. "A modular, production-ready DataStore system for Roblox games. Handles 
-player data loading, saving, and session management with built-in rate limiting 
-and data protection.")
+This is a modular (proper responsibility separation), production-ready DataStore system for Roblox games. It's all the fundamental functionalities of a standard DataStore system with some additional super helpful features as well (e.g. Session locking)
 
+This DataStore wrapper API solves common problems of data loss and insecurities in real world usage, and makes saving and interacting with the data really convenient and easy.
 ---
 
 ## Features
@@ -25,7 +23,13 @@ DataService
 ├── DataTemplate
 └── Profile
 
-Short paragraph explaining the responsibility of each module.
+### Responsibilities
+-DataService: The public API for player data operations. It hides DataStore complexity behind simple methods (Get(), Set(), Increment(), etc.)
+-AutoSaveManager: Manages autosaves
+-DataStoreManager: The only module that communicates with DataStore through RequestQueue.
+-RequestQueue: Queues and throttle DataStore requests, respecting the DataStore Rate limits.
+-DataTemplate: Defines default data and Reconcile() method.
+-Profile: The copy of the data stored on the server for instantaneous data operations, which is later pushed to the DataStore.
 
 ---
 
