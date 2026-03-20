@@ -2,7 +2,7 @@
 
 This is a modular (proper responsibility separation), production-ready DataStore wrapper for Roblox games. It's got all the fundamental functionalities of a standard DataStore system with some additional critical features as well (e.g. Session locking) without which data loss occured
 
-This DataStore wrapper API solves common problems of data loss and insecurities in real world usage, and makes saving and interacting with the data really convenient and easy.
+This DataStore wrapper solves common problems of data loss and insecurities in real world usage, and makes saving and interacting with the data really convenient and easy.
 
 ---
 
